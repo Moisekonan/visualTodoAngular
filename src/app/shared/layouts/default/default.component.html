@@ -1,0 +1,33 @@
+<div class="grid grid-cols-2 h-screen">
+  <div class="relative">
+    <!-- Image de fond -->
+    <img
+      src="https://images.unsplash.com/photo-1506784781895-38847b5e50e7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvZG8lMjBsaXN0fGVufDB8fDB8fHww"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="Image de fond"
+    />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+    <!-- Contenu textuel -->
+    <div
+      class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-8"
+    >
+      <h1 class="text-3xl font-bold mb-4">Todo Code_Oz</h1>
+      <p class="max-w-md text-lg">
+        Une application de gestion des tâches conçu pour aider les utilisateurs
+        à organiser et à suivre leurs tâches, responsabilités et objectifs de
+        manière systématique et efficace. Cette application est conçues pour
+        améliorer la productivité et la gestion du temps en fournissant aux
+        utilisateurs une plateforme centralisée pour créer, hiérarchiser et
+        gérer leurs listes de tâches.
+      </p>
+    </div>
+  </div>
+  <div class="flex w-full justify-center items-center">
+    <div class="w-1/2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

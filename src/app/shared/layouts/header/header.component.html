@@ -1,0 +1,14 @@
+<header class="app-header">
+  <div class="container flex items-center justify-between">
+    <h4 class="font-bold text-xl">Todo Code_Oz</h4>
+    <div class="flex gap-3">
+      @if (this.isAuthenticated$| async) {
+      <div class="px-2 font-medium">Bienvenu, <span class="text-cyan-500">{{nameCurrentUser.toLocaleUpperCase()}}</span></div>
+      <div class="px-2 font-medium cursor-pointer" (click)="onLogout()">Deconnexion</div>
+      }@else {
+      <div class="px-2 font-medium cursor-pointer">Connexion</div>
+      }
+
+    </div>
+  </div>
+</header>
